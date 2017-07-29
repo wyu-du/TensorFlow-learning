@@ -1,5 +1,5 @@
-<<<<<<< HEAD
 Records of studying the [tensorflow tutorial](https://github.com/sjchoi86/Tensorflow-101)
+======
 <br>
 ## Machine Learing Basics with TensorFlow
 1. Linear Regression <br>
@@ -48,8 +48,4 @@ Records of studying the [tensorflow tutorial](https://github.com/sjchoi86/Tensor
 		Epoch: 019/020 cost: 0.002916916
 		TRAIN ACCURACY: 1.000
 		TEST ACCURACY: 0.980
-||||||| merged common ancestors
-=======
-# tensorflow_study
-study the tensorflow tutorial from https://github.com/sjchoi86/Tensorflow-101
->>>>>>> 47cb0a055c849830dcc54f483e9cd3bade112631
+
