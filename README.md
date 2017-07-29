@@ -1,4 +1,4 @@
-Records of studying the [tensorflow tutorial](https://github.com/sjchoi86/Tensorflow-101)
+Study records for the [tensorflow tutorial](https://github.com/sjchoi86/Tensorflow-101)
 ======
 
 ## Machine Learing Basics with TensorFlow
