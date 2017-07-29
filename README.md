@@ -3,11 +3,11 @@ Records of studying the [tensorflow tutorial](https://github.com/sjchoi86/Tensor
 
 ## Machine Learing Basics with TensorFlow
 1. Linear Regression <br>
-![](https://github.com/ddddwy/tensorflow_study/raw/master/images/linear_regression1.png)<br>
-![](https://github.com/ddddwy/tensorflow_study/raw/master/images/linear_regression2.png)<br>
+![](https://github.com/ddddwy/TensorFlow-learning/raw/master/images/linear_regression1.png)<br>
+![](https://github.com/ddddwy/TensorFlow-learning/raw/master/images/linear_regression2.png)<br>
 
 2. Logistic Regression with MNIST<br>
-* 单层神经网络（784*10）训练MNIST数据集，学习率为0.01，训练迭代次数50次：
+* 单层神经网络（784*10）训练MNIST数据集，学习率为0.01，训练迭代次数50次：<br>
 		Epoch:000/050 cost: 1.176854430 train_aac: 0.850 test_acc: 0.851<br>
 		Epoch:005/050 cost: 0.440934456 train_aac: 0.960 test_acc: 0.895<br>
 		Epoch:010/050 cost: 0.383406833 train_aac: 0.900 test_acc: 0.905<br>
@@ -32,7 +32,7 @@ Records of studying the [tensorflow tutorial](https://github.com/sjchoi86/Tensor
 
 ## Multi-Layer Perceptron (MLP)
 1. Simple MNIST<br>
-* 两层神经网络，h1的结构为784*256，h2结构为256*128，输出10个label：<br>
+* 两层神经网络，h1的结构为784x256，h2结构为256x128，输出10个label：<br>
 		Epoch: 003/020 cost: 0.119174641<br>
 		TRAIN ACCURACY: 0.950<br>
 		TEST ACCURACY: 0.963<br>
