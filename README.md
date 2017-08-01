@@ -1,4 +1,4 @@
-Study records for the [tensorflow tutorial](https://github.com/sjchoi86/Tensorflow-101)
+Study records of the [tensorflow tutorial](https://github.com/sjchoi86/Tensorflow-101)
 ======
 
 ## Machine Learing Basics with TensorFlow
@@ -7,7 +7,7 @@ Study records for the [tensorflow tutorial](https://github.com/sjchoi86/Tensorfl
 ![](https://github.com/ddddwy/TensorFlow-learning/raw/master/images/linear_regression2.png)<br>
 
 2. Logistic Regression with MNIST<br>
-* 单层神经网络（784*10）训练MNIST数据集，学习率为0.01，训练迭代次数50次：<br>
+* 1-layer nueral network(784*10), learningrate=0.01，training_epoch=50:<br>
 		Epoch:000/050 cost: 1.176854430 train_aac: 0.850 test_acc: 0.851<br>
 		Epoch:005/050 cost: 0.440934456 train_aac: 0.960 test_acc: 0.895<br>
 		Epoch:010/050 cost: 0.383406833 train_aac: 0.900 test_acc: 0.905<br>
@@ -18,7 +18,7 @@ Study records for the [tensorflow tutorial](https://github.com/sjchoi86/Tensorfl
 		Epoch:035/050 cost: 0.315932722 train_aac: 0.860 test_acc: 0.916<br>
 		Epoch:040/050 cost: 0.310719569 train_aac: 0.930 test_acc: 0.918<br>
 		Epoch:045/050 cost: 0.306350609 train_aac: 0.900 test_acc: 0.918<br>
-* 单层神经网络（784*10）训练MNIST数据集，学习率为0.01，训练迭代次数50次，学习率衰减为0.000001，加入L2正则：<br>
+* 1-layer nueral network(784*10), learningrate=0.01，training_epoch=50, learningrate_decay=0.000001, add L2 regularization:<br>
 		Epoch:000/050 cost: 1.955112785 train_aac: 0.780 test_acc: 0.785<br>
 		Epoch:005/050 cost: 1.909684022 train_aac: 0.790 test_acc: 0.794<br>
 		Epoch:010/050 cost: 1.909698583 train_aac: 0.900 test_acc: 0.786<br>
@@ -32,7 +32,7 @@ Study records for the [tensorflow tutorial](https://github.com/sjchoi86/Tensorfl
 
 ## Multi-Layer Perceptron (MLP)
 1. Simple MNIST<br>
-* 两层神经网络，h1的结构为784x256，h2结构为256x128，输出10个label：<br>
+* 2-layer nerual network, h1(784*256), h2(256*128)：<br>
 		Epoch: 003/020 cost: 0.119174641<br>
 		TRAIN ACCURACY: 0.950<br>
 		TEST ACCURACY: 0.963<br>
@@ -48,4 +48,35 @@ Study records for the [tensorflow tutorial](https://github.com/sjchoi86/Tensorfl
 		Epoch: 019/020 cost: 0.002916916<br>
 		TRAIN ACCURACY: 1.000<br>
 		TEST ACCURACY: 0.980<br>
+
+2. Deeper MNIST<br>
+* 3-layer nerual network, h1(784*512), h2(512*512), h3(512*256), dropout_keep_prob=0.6：<br>
+		Epoch: 003/020 cost: 0.032308363<br>
+		TRAIN ACCURACY: 0.980<br>
+		TEST ACCURACY: 0.977<br>
+		Epoch: 007/020 cost: 0.010782411<br>
+		TRAIN ACCURACY: 1.000<br>
+		TEST ACCURACY: 0.981<br>
+		Epoch: 011/020 cost: 0.004934132<br>
+		TRAIN ACCURACY: 1.000<br>
+		TEST ACCURACY: 0.980<br>
+		Epoch: 015/020 cost: 0.002741719<br>
+		TRAIN ACCURACY: 1.000<br>
+		TEST ACCURACY: 0.980<br>
+		Epoch: 019/020 cost: 0.003112582<br>
+		TRAIN ACCURACY: 1.000<br>
+		TEST ACCURACY: 0.981<br>
+		
+## Convolutional Neural Network (CNN)
+1. Simple MNIST<br>
+* one convolutional layer(3*3*1*64), one densen layer(14*14*64), strides(1*1*1*1), padding='SAME', max pooling:<br>
+		Training accuracy: 1.000<br>
+		Test accuracy: 0.984<br>
+		Size of 'input_r' is (1, 28, 28, 1)<br>
+		convolution: Size of 'conv1' is (1, 28, 28, 64), size of 'wc1' is (3, 3, 1, 64)<br>
+		add bias: Size of 'conv2' is (1, 28, 28, 64)<br>
+		pass relu: Size of 'conv3' is (1, 28, 28, 64)<br>
+		max pooling: Size of 'pool' is (1, 14, 14, 64)<br>
+		fully connected layer: Size of 'dense' is (1, 12544)<br>
+		output: Size of 'out' is (1, 10)<br>
 
