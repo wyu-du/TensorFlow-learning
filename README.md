@@ -1,4 +1,4 @@
-Study records of the tensorflow [1](https://github.com/sjchoi86/Tensorflow-101) [2](https://github.com/aymericdamien/TensorFlow-Examples)
+Study records of the tensorflow [#1](https://github.com/sjchoi86/Tensorflow-101) [#2](https://github.com/aymericdamien/TensorFlow-Examples)
 ======
 
 ## Machine Learing Basics with TensorFlow
@@ -7,16 +7,16 @@ Study records of the tensorflow [1](https://github.com/sjchoi86/Tensorflow-101) 
 ![](https://github.com/ddddwy/TensorFlow-learning/raw/master/images/linear_regression2.png)<br>
 
 2. Logistic Regression with MNIST<br>
-* 1-layer nueral network(784*10), learningrate=0.01，training_epoch=50:<br>
+* 1-layer nueral network, learningrate=0.01，training_epoch=50 :<br>
 		cost: 0.306350609 train_aac: 0.900 test_acc: 0.918<br>
-* 1-layer nueral network(784*10), learningrate=0.01，training_epoch=50, learningrate_decay=0.000001, add L2 regularization:<br>
+* 1-layer nueral network, learningrate=0.01，training_epoch=50, learningrate_decay=0.000001, add L2 regularization:<br>
 		cost: 1.909791144 train_aac: 0.790 test_acc: 0.791<br>
 
 ## Multi-Layer Perceptron (MLP)
-* 2-layer nerual network, h1(784*256), h2(256*128)：<br>
+* 2-layer nerual network, h1(784x256), h2(256x128)：<br>
 		cost: 0.002916916 train_aac: 1.000 test_acc: 0.980<br>
 
-* 3-layer nerual network, h1(784*512), h2(512*512), h3(512*256), dropout_keep_prob=0.6：<br>
+* 3-layer nerual network, h1(784x512), h2(512x512), h3(512x256), dropout_keep_prob=0.6：<br>
 		cost: 0.003112582 train_aac: 1.000 test_acc: 0.981<br>
 		
 ## Convolutional Neural Network (CNN)
@@ -30,7 +30,7 @@ Study records of the tensorflow [1](https://github.com/sjchoi86/Tensorflow-101) 
 		fully connected layer: Size of 'dense' is (1, 12544)<br>
 		Size of 'output' is (1, 10)<br>
 
-* two convolutional layer, two fully connected layer, keepratio=0.7:<br>
+* two convolutional layer, two fully connected layer, keep_ratio=0.7:<br>
 		cost: 0.026513918 train_acc: 0.970 test_acc: 0.987<br>
 		accuracy is higher than one-layer, but takes much much more time.<br>
 
