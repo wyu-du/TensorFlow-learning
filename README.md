@@ -9,7 +9,7 @@ Study records of the tensorflow [#1](https://github.com/sjchoi86/Tensorflow-101)
 2. Logistic Regression with MNIST<br>
 * 1-layer nueral network, learningrate=0.01，training_epoch=50 :<br>
 		cost: 0.306350609 train_aac: 0.900 test_acc: 0.918<br>
-* 1-layer nueral network, learningrate=0.01，training_epoch=50, learningrate_decay=0.000001, add L2 regularization:<br>
+* 1-layer nueral network, learningrate=0.01，training_epoch=50, learningrate_decay=0.000001, add L2 regularization :<br>
 		cost: 1.909791144 train_aac: 0.790 test_acc: 0.791<br>
 
 		
@@ -35,10 +35,14 @@ Study records of the tensorflow [#1](https://github.com/sjchoi86/Tensorflow-101)
 
 * 2 convolutional layer, 2 fully connected layer, keep_ratio=0.7 :<br>
 		cost: 0.026513918 train_acc: 0.970 test_acc: 0.987<br>
-		accuracy is higher than one-layer, but takes much much more time.<br>
+		test accuracy is higher than one-layer, but takes much much more time.<br>
 
 		
 3. Recurrent Neural Network (RNN)
-* 1-layer LSTM with MNIST : <br>
-		train_acc: 0.96875 test_acc: 0.984375<br>
+* A Recurrent Neural Network (LSTM): <br>
+		1 simple lstm cell <br>
+		Test Accuracy: 0.984375<br>
 
+* A Bidirectional Recurrent Neural Network (LSTM):<br>
+		2 lstm cells: forward dircetion cell + backward direction cell <br>
+		Test Accuracy: 1.0<br>
