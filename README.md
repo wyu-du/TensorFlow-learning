@@ -62,3 +62,11 @@ Study records of the tensorflow [#1](https://github.com/sjchoi86/Tensorflow-101)
 		Using 'Saver' op to save and restore all the variables.<br>
 		Save model weights to disk: saver.save(sess, model_path)<br>
 		Restore model weights from previously saved model: saver.restore(sess, model_path)<br>
+2. Tensorboard - Graph and loss visualization <br>
+		Graph and Loss visualization using Tensorboard.<br>
+		For windows10 users, open the anaconda prompt and run 'cd C:/Users/user_name/tmp/tensorflow_logs/example', after enter into the /example file, run the command 'tensorboard --logdir=C:/Users/think/tmp/tensorflow_logs/example', then open open http://localhost:6006/ into the web browser.<br>
+		Create a summary to monitor cost tensor: tf.summary.scalar("loss",cost)<br>
+		Merge all summaries into a single op: merged_summary_op=tf.summary.merge_all()<br>
+		Write logs to Tensorboard: summary_writer=tf.summary.FileWriter(logs_path,graph=tf.get_default_graph())<br>
+		
+		
