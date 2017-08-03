@@ -48,6 +48,11 @@ Study records of the tensorflow [#1](https://github.com/sjchoi86/Tensorflow-101)
 		Test Accuracy: 1.0<br>
 
 * A Dynamic Recurrent Neural Network (LSTM):<br>
-		This example is using a toy dataset to classify linear sequences. The generated sequences have variable length.
-		1 lstm cell which can calculate dynamic sequence length.
-		Testing Accuracy: 0.976
+		This example is using a toy dataset to classify linear sequences. The generated sequences have variable length.<br>
+		1 lstm cell which can calculate dynamic sequence length.<br>
+		Testing Accuracy: 0.976<br>
+		
+* An AutoEncoder:<br>
+		Using an auto encoder on MNIST handwritten digits.<br>
+		A 2-layer encoder, a 2-layer decoder, h1(784x256), h2(256x128).<br>
+		![](https://github.com/ddddwy/TensorFlow-learning/raw/master/images/autoencoder.png)
