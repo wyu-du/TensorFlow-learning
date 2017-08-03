@@ -40,11 +40,11 @@ Study records of the tensorflow [#1](https://github.com/sjchoi86/Tensorflow-101)
 		
 3. Recurrent Neural Network (RNN)
 * A Recurrent Neural Network (LSTM): <br>
-		1 simple lstm cell <br>
+		1 simple lstm cell. <br>
 		Test Accuracy: 0.984375<br>
 
 * A Bidirectional Recurrent Neural Network (LSTM):<br>
-		2 lstm cells: forward dircetion cell + backward direction cell <br>
+		2 lstm cells: forward dircetion cell + backward direction cell. <br>
 		Test Accuracy: 1.0<br>
 
 * A Dynamic Recurrent Neural Network (LSTM):<br>
@@ -56,3 +56,9 @@ Study records of the tensorflow [#1](https://github.com/sjchoi86/Tensorflow-101)
 		Using an auto encoder on MNIST handwritten digits.<br>
 		A 2-layer encoder, a 2-layer decoder, h1(784x256), h2(256x128).<br>
 		![](https://github.com/ddddwy/TensorFlow-learning/raw/master/images/autoencoder.png)
+		
+## Utilities
+1. Save and Restore a model<br>
+		Using 'Saver' op to save and restore all the variables.<br>
+		Save model weights to disk: saver.save(sess, model_path)<br>
+		Restore model weights from previously saved model: saver.restore(sess, model_path)<br>
