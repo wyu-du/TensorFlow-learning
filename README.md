@@ -46,3 +46,8 @@ Study records of the tensorflow [#1](https://github.com/sjchoi86/Tensorflow-101)
 * A Bidirectional Recurrent Neural Network (LSTM):<br>
 		2 lstm cells: forward dircetion cell + backward direction cell <br>
 		Test Accuracy: 1.0<br>
+
+* A Dynamic Recurrent Neural Network (LSTM):<br>
+		This example is using a toy dataset to classify linear sequences. The generated sequences have variable length.
+		1 lstm cell which can calculate dynamic sequence length.
+		Testing Accuracy: 0.976
