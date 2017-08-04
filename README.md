@@ -60,23 +60,24 @@ Study records of the tensorflow [#1](https://github.com/sjchoi86/Tensorflow-101)
 ## Utilities
 1. Save and Restore a model<br>
 Using 'Saver' op to save and restore all the variables.<br>
-*Save model weights to disk: saver.save(sess, model_path)<br>
-*Restore model weights from previously saved model: saver.restore(sess, model_path)<br>
+* Save model weights to disk: saver.save(sess, model_path)<br>
+* Restore model weights from previously saved model: saver.restore(sess, model_path)<br>
 
 2. Tensorboard - Graph and loss visualization <br>
 Graph and Loss visualization using Tensorboard.<br>
 >For windows10 users:<br>
->open the anaconda prompt and run 'cd C:/Users/think/tmp/tensorflow_logs/example', <br>
->run 'tensorboard --logdir=C:/Users/think/tmp/tensorflow_logs/example', <br>
->then open http://localhost:6006/ into the web browser.<br>
-*Create a summary to monitor cost tensor: tf.summary.scalar("loss",cost)<br>
-*Merge all summaries into a single op: merged_summary_op=tf.summary.merge_all()<br>
-*Write logs to Tensorboard: summary_writer=tf.summary.FileWriter(logs_path,graph=tf.get_default_graph())<br>
+open the anaconda prompt and run 'cd C:/Users/think/tmp/tensorflow_logs/example', <br>
+run 'tensorboard --logdir=C:/Users/think/tmp/tensorflow_logs/example', <br>
+then open http://localhost:6006/ into the web browser.<br>
+* Create a summary to monitor cost tensor: tf.summary.scalar("loss",cost)<br>
+* Merge all summaries into a single op: merged_summary_op=tf.summary.merge_all()<br>
+* Write logs to Tensorboard: summary_writer=tf.summary.FileWriter(logs_path,graph=tf.get_default_graph())<br>
 
 3. Tensorboard - Advanced visualization <br>
 Graph and Loss visualization using Tensorboard.<br>
-*Create summaries to visualize weights: tf.summary.histogram(var.name,var)<br>
+* Create summaries to visualize weights: tf.summary.histogram(var.name,var)<br>
 
 ## Natural Language Processing
 1. word2vec<br>
-
+A skip-gram model:<br>
+![](https://github.com/ddddwy/TensorFlow-learning/raw/master/images/word2vec.png)
